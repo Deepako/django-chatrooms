@@ -1,5 +1,5 @@
 #encoding=utf8
-import urlparse
+import urllib.parse
 
 from django.conf import settings
 from django.contrib.auth import REDIRECT_FIELD_NAME
