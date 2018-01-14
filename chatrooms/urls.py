@@ -1,10 +1,10 @@
 #encoding=utf8
 
 try:
-    from django.conf.urls.defaults import url, patterns
+    from django.conf.urls.defaults import url
 #Django 1.6+
 except:
-    from django.conf.urls import url, patterns
+    from django.conf.urls import url
 
 
 from . import views
