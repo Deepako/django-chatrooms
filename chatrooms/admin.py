@@ -1,8 +1,7 @@
 #encoding=utf8
 
 from django.contrib import admin
-from django.db import models
-from models import Room, Message
+from chatroom.models import Room, Message
 
 
 class RoomAdmin(admin.ModelAdmin):
