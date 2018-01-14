@@ -3,8 +3,10 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-from polymorphic import PolymorphicModel
-
+try:
+    from polymorphic import PolymorphicModel
+except ImportError: # polymorphic > 0.8
+    from polymorphic.models import PolymorphicModel
 
 class Room(PolymorphicModel):
     name = models.CharField(max_length=64, unique=True)
